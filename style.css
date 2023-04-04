@@ -1,0 +1,468 @@
+  @import url('https://fonts.googleapis.com/css2?family=Rokkitt:wght@400;500&family=Ubuntu:wght@300;400;500&display=swap');
+  /*font-family: 'Rokkitt', serif;*/
+
+
+  * {
+    font-family: 'Ubuntu', sans-serif;
+
+    padding: 0;
+    margin: 0;
+
+    box-sizing: border-box;
+
+    scroll-behavior: smooth;
+  }
+
+  body {
+    flex: none;
+  }
+
+  section {
+    padding: 2% 2%;
+    margin: 0;
+  }
+
+  /*Header*/
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 10%;
+
+    padding: 2% 3%;
+
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
+
+    color: white;
+    background-color: lightgray;
+  }
+
+  /*Form Section*/
+
+  .check-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    min-height: 20vh;
+
+  }
+
+  .form-body {
+    width: 90%;
+  }
+
+  .form-header {
+    padding: 2% 9%;
+  }
+
+  .form-header h2 {
+    font-size: 36px;
+  }
+
+  .form-header p {
+    font-size: 20px;
+  }
+
+  .form-box {
+    padding: 1% 0 1% 0;
+
+    color: black;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: row;
+
+    font-size: 16px;
+
+    min-height: 10vh;
+
+    background-color: lightgray;
+    border-radius: 10px;
+  }
+
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    min-height: 10vh;
+  }
+
+  input,
+  select {
+    width: 15vh;
+    height: 4vh;
+
+    padding: 1vh;
+
+    background-color: none;
+
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+
+
+    color: black;
+    opacity: 1;
+
+    line-height: 2;
+
+  }
+
+
+  .title {
+    width: 7.5vh;
+  }
+
+  .email {
+    width: 30vh;
+  }
+
+  .tel {
+    width: 13vh;
+  }
+
+  input text {
+    padding: 2%;
+  }
+
+  textarea {
+    width: 30vh;
+
+    background-color: none;
+
+    border: 2px solid lightgray;
+    border-radius: 5px;
+    outline: none;
+
+    padding: 10px;
+    margin-top: 5px;
+
+    font-family: 'Ubuntu', sans-serif;
+
+    resize: none;
+
+    color: #EBF0E5;
+    opacity: 1;
+  }
+
+  input:focus,
+  select:focus,
+  textarea:focus {
+
+    transition: 0.4s;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: whitesmoke;
+  }
+
+  .label-details {
+    padding: 1% 1%;
+
+    line-height: 1.5;
+  }
+
+  .label-details-empty {
+
+    padding: 1% 1%;
+
+    line-height: 1.5;
+
+    color: transparent;
+  }
+
+  .check-btn {
+
+    min-width: 15vh;
+    min-height: 4vh;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+
+    border: none;
+    border-radius: 5px;
+
+    font-size: 12px;
+
+
+  }
+
+  .check-btn:hover {
+    background-color: black;
+    transition: 0.4s;
+    color: white;
+
+    border: none;
+
+    cursor: pointer;
+  }
+
+
+
+  /*
+  Rooms Section
+
+
+  img {
+    max-width: 100%;
+
+    padding: 2% 3%;
+  }
+
+  .room {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .room-header {
+    width: 100%;
+
+    padding: 2% 9%;
+
+    border: 5px solid black;
+    border-radius: 2px;
+  }
+
+  .room-header h2 {
+    font-size: 22px;
+  }
+
+  .room-header p {
+    font-size: 18px;
+  }
+
+  .room-box {
+    width: 80%;
+
+    padding: 1% 1%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .room-row {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+
+    min-height: 10vh;
+  }
+
+  .room-col-1 {
+    width: 50%;
+
+    padding: 2% 2%;
+  }
+
+  .room-col-1 p {
+    font-size: 18px;
+    line-height: 1.5;
+
+    text-align: justify;
+
+    padding: 2% 3%;
+  }
+
+  .room-col-1 ul {
+    padding: 0% 7%;
+
+    line-height: 1.5;
+  }
+
+  .book-btn {
+
+    min-width: 15vh;
+    min-height: 4vh;
+
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+
+
+    border: none;
+    border-radius: 5px;
+
+    margin: 5% 4%;
+
+  }
+
+  .book-btn:hover {
+    background-color: black;
+    transition: 0.4s;
+    color: white;
+
+    border: none;
+    cursor: pointer;
+  }
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+
+  @media screen and (max-width: 775px) {
+
+    .room-row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .room-col-1 p {
+      font-size: 16px;
+
+      justify-content: center;
+    }
+
+    .book-btn {
+      margin: 5% 0;
+    }
+  }
+  */
+
+
+  /*Payments Section*/
+
+  .payment-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 80vh;
+
+  }
+
+  .payment-form-body {
+    width: 65%;
+    height: 80vh;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 2%;
+
+  }
+
+  ::placeholder {
+    color: rgba(211, 211, 211, 0.719);
+  }
+
+  .details-box-1,
+  .details-box-2 {
+    padding: 2% 3%;
+
+    color: black;
+    font-weight: 500;
+
+    min-height: 100%;
+  }
+
+  .details-box-1 {
+
+    width: 50%;
+
+    border-right: 3px solid lightgray;
+
+
+  }
+
+  .details-box-2 {
+
+    width: 100%;
+
+  }
+
+  .details-form-row {
+    display: flex;
+    justify-content: space-between;
+
+
+    width: 100%;
+    min-height: 10vh;
+  }
+
+  @media screen and (max-width: 1250px) {
+
+    input,
+    select {
+      width: 30vh;
+    }
+
+    .email {
+      width: 30vh;
+    }
+
+    textarea {
+      width: 30vh;
+    }
+
+    .payment-form {
+
+      width: 100%;
+      height: 100%;
+    }
+
+    .payment-form-body {
+
+      height: 100%;
+
+      display: flex;
+      flex-direction: column;
+      justify-items: center;
+
+      align-items: center;
+    }
+
+    .details-form-row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+
+    }
+
+    .check-btn {
+      font-size: 10px;
+    }
+
+    .details-box-1 {
+      border-right: none;
+
+      border-bottom: 3px solid lightgray;
+
+      padding-bottom: 5%;
+
+    }
+
+    .form-header {
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .form-row {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      text-align: center;
+    }
+
+    .form-box {
+      padding-bottom: 3%;
+    }
+
+  }
